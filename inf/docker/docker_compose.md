@@ -34,6 +34,6 @@ Purpose: replaces docker run command
 
 ### Up/down
 - docker compose up (sets up all volumes and networks and containers)
-- docker compose down (stops all containers)
+- docker compose down (stops all containers and removes cont/volumes/networks)
 
 

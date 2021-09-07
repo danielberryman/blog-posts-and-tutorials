@@ -23,6 +23,7 @@
 ### 3b. Nginx HTTPS
 - More complicated because you have to handle getting certificates...
 - I haven't had a reason to go off and learn this!
+- Might look at something like this: https://medium.com/@agusnavce/nginx-server-with-ssl-certificates-with-lets-encrypt-in-docker-670caefc2e31
 
 ### 4. Get the IP address from the droplet and connect via browser over http
 - You see one of the following:
