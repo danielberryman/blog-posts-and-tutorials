@@ -1,0 +1,40 @@
+/* Teeny-Tiny Screens - Galaxy Fold */
+@media screen and (max-width: 285px) {
+
+}    
+
+/* Tiny Screens - iPhone 5 for example */
+@media screen and (max-width: 330px) {
+
+}
+
+/* Small Screens */
+@media screen and (min-width: 445px) {
+  
+}
+  
+@media screen and (min-width: 600px) {
+
+}
+  
+/* Medium Screens */
+@media screen and (min-width: 720px) {
+
+}
+
+@media screen and (min-width: 900px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1300px) {
+
+}
+
+@media screen and (min-width: 1550px) {
+
+}
+
