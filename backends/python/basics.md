@@ -1,5 +1,9 @@
 # Python Basics
 
+## Helpful Links
+- https://realpython.com/tutorials/basics/
+- https://realpython.com/python-first-steps/
+
 ## Common built-ins
 - print()
   - Takes a string/the equivalent of console.log in js

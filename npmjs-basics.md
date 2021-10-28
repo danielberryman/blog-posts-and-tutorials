@@ -12,3 +12,8 @@
 - Your package will be available via an open source CDN called https://unpkg.com/
 - Add a link tag to your index.html
   - `<link rel="stylesheet" href="https://unpkg.com/package-name@1.0.0/file-name.ext">`
+
+## Publish a new version
+- Login: npm login
+- Change version in package.json
+- RUN: npm publish

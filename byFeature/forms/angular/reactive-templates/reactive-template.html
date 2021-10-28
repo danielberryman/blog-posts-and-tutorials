@@ -1,0 +1,9 @@
+<form [formGroup]="form" (ngSubmit)="submitFn()">
+    <div formArrayName="arrayOfControls">
+        <div *ngFor="let element of arrayOfControls; let i = index">
+            <label>Something: </label>
+            <input type="text" formControlName="{{i}}">
+            <div *ngIf="pointAt(i).invalid">Message when input value is invalid</div>
+        </div>
+    </div>
+</form>

@@ -19,6 +19,12 @@
   - Download Screen Reader ext on Chrome and see how the screen reader reads your form
   - Remove screen reader from Chrome
 
+## Submit with using the Action attribute
+- Give the form an ID
+- Using the ID in JS get the element and set an event listener for the submit event type
+- Create a FormData object which you populate by getting the element via it's ID
+- Use the following to access property values on the form: formData.get('property')
+
 ## Slightly less important things you might need to add
 - Radio buttons
   - Always define radio buttons inside a fieldset
@@ -104,4 +110,3 @@ META
 - Inputs are called form controls
 - Input elements are "empty" elements
 - Never nest a form element inside another form element
-

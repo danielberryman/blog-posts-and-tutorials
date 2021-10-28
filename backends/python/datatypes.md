@@ -1,4 +1,35 @@
-# Datatypes
+# Datatypes In Python
+In this page you'll find details on datatypes as well as type hints.
+
+## Helpful Links
+- https://fastapi.tiangolo.com/python-types/
+
+## Type Hints
+- Purpose: to give you better support for autcompletion and error checking in you IDE
+- Main use case: with function parameters
+- Syntax: `def function_name(arg1: str)` here the `: str` is the type hint
+- Simple Types: str, int, bool, float, bytes
+- Generic and Internal Types
+  - Import List, Set, Tuple and Dict from the built-in `typing` library
+  - `from typing import List, Set`
+  - Then you can set the internal types with square brackets and comma delimited list
+  - `def function_name(arg1: List[str], arg2: Tuple[int, int, str])`
+  - For Dict you set 2 type parameters `Dict[float, str]`
+- Optional (also a Generic)
+  - imported from `typing` as well
+  - Optional ensures the type is whatever internal type you declare or the type `None`
+  - Example `def function_name(arg1: Optional[str])`
+- Classes
+```python
+class Person:
+    def __init__(self, name: str):
+        self.name = name
+
+
+def get_person_name(one_person: Person):
+    return one_person.name
+```
+
 - Number
   - Integer
     - `int()` returns an integer
