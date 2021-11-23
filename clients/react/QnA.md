@@ -1,0 +1,37 @@
+# Questions & Answers for memorization
+
+Create a new react project |"npm create-react-app app-name"
+Start react app |"npm start"
+What are the 2 ways to create basic react component? |function or const
+Write a basic react component with nothing in it called Name using `function` |"function Name() { return () }"
+Write a basic react component with nothing in it called Name using `cont` |"const Name = () => { return () }"
+What is the file naming convention in react? |CamelCase
+Add a title argument and pass in var to Name component (react) |"<Name title={var} />"
+How many root elements can you have in a JSX code snippet? |1
+What is the JSX version of the class attribute? |className
+How do you interpret text as javascript in JSX snippets? |wrap it in curly braces {}
+How do you loop or map in JSX? |Use { then js on the definition and } to close on the final line
+How do you import a component <Name /> that was exported as default (react)? |import Name from
+How do you import a component <Name /> that was exported inline (react)? |import { Name } from
+How do you import Name.css from same dir (react)? |import './Name.css'
+What is the concept of a container component in react? |A component that doesn't hold state
+What are the 3 major modules you need for Routing in react and what are they from? |BrowserRouter Switch Route from react-router-dom
+What attribute does the <Route /> component take in react? |path
+Write how the 3 main routing components are used in react with 1 route defined as /home |"<BrowserRouter><Switch><Route path="/home"/></Switch></BrowserRouter>"
+What are the 2 ways you go to a different route in a react JSX snippets? |Use the link component or use useHistory from react-router-dom
+Write JSX code to go to the /home route in react |"<Link to="/home"></Link>"
+Write the import statement for useHistory and use it to go to route /home |"import { useHistory } from 'react-router-dom'; useHistory.push('/home');"
+What is the react directive for element click events? |onClick
+Write a react click directive on Name component and use the function getName()|"<Name onClick={getName}/>"
+What is the react hook for state? |useState
+What is the useState react hook simply? |a function
+What does the useState react hook return when a single parameter is passed to it? |An array with 2 items - the variable passed to it and a setter function
+(react) Pass props.title to state hook and set the return values to title and setTitle |"const [title, setTitle] = useState(props.title);"
+(react) Why is const used when we assign a variable to state that can change? |Because react takes care of the reassignment
+(react) Can you call useState multiple times in a component? |yes
+(react) If you don't want to call useState on individual properties what can you do instead? |Use 1 object to manage all component state (individual states in more common in the real world)
+(react) What's the best way to do state updates when using a single object? |Use setter and pass in an arrow function where the param is the state variable representing the current state object. In the fn body return an object that includes the rest of the object using the spread operator and then the state you're updating (property: value)
+(react) Say you have a state object userInput and a setter setUserInput. Update the title property to have the value 'Hello' in such a way that ensures you're using the most up to date state when making the update. |"setUserInput((userInput) => { return { ...userInput, title: 'Hello' } })"
+What does react do with the initial useState(prop.value) call when reloading? |React tracks whether the component is being instantiated or reloaded. If it's being reloaded it won't set the prop.value in state again.
+What is the event listener in react for changes to an element? onChange
+How do you access the event object in react in the function definition of the fn passed to the event listener? (fn name is clickHandler) |"const clickHandler = (event) => { }"

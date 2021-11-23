@@ -61,3 +61,11 @@ def function_name(arg1, arg2, ...):
 
 ### Getting help with python
 - REPL: `help()`
+
+### Try catch
+```python
+try:
+  # do something
+except:
+  # do something else
+```
