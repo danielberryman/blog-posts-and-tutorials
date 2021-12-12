@@ -1,7 +1,6 @@
-# Questions & Answers for memorization
+I use Quizlet to do flashcards. I import these q/a and set the | character as the delimiter.
 
-Create a new react project |"npm create-react-app app-name"
-Start react app |"npm start"
+QUESTIONS & ANSWERS
 What are the 2 ways to create basic react component? |function or const
 Write a basic react component with nothing in it called Name using `function` |"function Name() { return () }"
 Write a basic react component with nothing in it called Name using `cont` |"const Name = () => { return () }"

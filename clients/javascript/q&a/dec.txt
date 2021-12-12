@@ -1,0 +1,17 @@
+I use Quizlet to do flashcards. I import these q/a and set the | character as the delimiter.
+
+QUESTIONS & ANSWERS
+
+Is it best practice to update global variable from within a function?|Mostly no
+What is meant by block scope?|Something that uses {} like loops or conditionals
+block scope does not apply when setting variables with what keyword(s)?|var
+block scope does apply when setting variables with what keyword(s)?|let and const
+Define lexical scope:|An inner function nested inside a parent function has access to the variables defined by the parent function(s)
+Define Higher Order Functions:|Functions that operate with other functions (accept functions arguments or return functions)
+Define a method:|A function defined as the value of a property of an object
+Explain the shorthand way to declare a method:|You don't use a property name and colon but instead just write the method like a function without the function keyword
+The value of this depends on the:|innvocation context of the function it's used in
+When you write a function on the global scope what object is that function defined on?|The window object
+What is returned when you type the keyword this into the javascript console in your browser?|The window object
+
+----------------
