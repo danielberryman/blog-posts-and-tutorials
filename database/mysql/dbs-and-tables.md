@@ -68,4 +68,6 @@ ALTER TABLE tblname *...modifications*;
    - *DEFAULT*
 
 ## TABLE MODIFICATIONS
-...
+
+### Add Column
+ALTER TABLE tablename ADD COLUMN name type;
