@@ -1,3 +1,23 @@
+T/F Not every css property on an element needs to have a value.|false
+How do you select pseudo-elements of an element?|::after, ::before
+
+--------------
+
+What is this called as a structure? .red { color: red; }|css rule
+What are these called? .red, #title|selectors
+What is the structure of the curly braces called? .red { color: red; }|declaration block
+What are these examples of? color: red; height: 100px;|declarations
+Which of these selectors has a higher specificity (answer with 1, 2, or s for same)? .red:hover or .red|s
+Which of these selectors has a higher specificity (answer with 1, 2, or s for same)? .red:hover or #nav .red|2
+If you don't declare a font size on an element what will the font size be?|The default font-size supplied by the browser
+When setting a font size with % the % is relative to...|the parent element's font size
+When setting a length with % the % is relative to...|the parent element's width
+When setting a font size with em the calculation uses...|the current element's parent's font size
+When setting a font size with rem the calculation uses...|the root element's font size
+When setting a legnth with em the calculation uses...|the current element's font size
+
+--------------
+
 What property can you use to create a different shape from an existing element?|clip-path
 How can you center an element in the browser window using position and transform?|Set position to absolute, top/left to 50%, transform to translate(-50%,-50%)
 When using the translate value with property transform what do translates args refer to?|The element itself

@@ -5,6 +5,7 @@
 - https://reactrouter.com/
 
 ## TD:LR
+- Install: `npm install react-router-dom`
 - Import the following 
 ```javascript
 import {
