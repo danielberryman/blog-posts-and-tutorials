@@ -1,3 +1,16 @@
+What is the visual formatting model in the browser?|Algo that calculates the boxes and determines the layout of boxes for each element in the render tree to determine the final layout of the page
+What are 3 main aspects of a website the visual formatting model uses to format a page?|The box model, position schemes, stacking context
+What properties make up the box model?|margin, border, padding, width, height, content)
+What's included and excluded from inline-block level elements?|They occupy content space and have no line breaks like inline els but apply the box model like block els
+What's true of inline elements?|Content is distributed across lines, no line breaks, no heights or widths, only sets horizontal padding and margin
+What true about the width and height of block level elements by default?|They only refer to the content. They don't account for the padding and border
+How do you use width and height to set sizes on the combo of content, padding, and border of an element?|box-sizing: border-box
+What is stacking context?|A strategy to form layers of elements that may overlap
+Name properties that impact stacking context?|z-index, opacity, transform, filter
+What is BEM?|Block element modifier, it's a naming convention strategy for CSS classes
+
+--------------
+
 T/F Not every css property on an element needs to have a value.|false
 How do you select pseudo-elements of an element?|::after, ::before
 

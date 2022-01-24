@@ -78,3 +78,70 @@
 - The value passed down is the computed value not the declared value
 - If there's no specified value then it will be the initial value
 - You can use the inherit keyword to force inheritance and also initial to force the initial value
+
+## Visual Formatting Model
+- Algo that calculates the boxes and determines the layout of boxes for each element in the render tree to determine the final layout of the page
+- Things it takes into account
+  - The Box Model (margin, border, padding, width, height, content)
+    - BLOCK LEVEL
+      - Fill area: area inside the border
+      - Total width of an element doesn't include the margin
+      - Total height of an element doens't include the margin
+      - BUT if you set box-sizing to border-box it mean the width and height set will be for the content, padding and border instead of the just the content box (NOW the the algo only uses the specified height and width)
+      - Display values flex, list-item, table are also block level
+    - INLINE
+      - Content distributed in lines
+      - No line breaks
+      - No heights and widths
+      - Only specify horizontal paddings and margins
+    - INLINE-BLOCK
+      - Occupies content space
+      - No line breaks'
+      - Box Model applies as in block level elements
+  - Positioning Schemes
+    - Normal Flow
+      - Default
+      - Not floated or absolutely positioned
+    - Absolute Positioning
+      - Using position absolute and fixed
+      - CSS properties top left bottom and right
+      - Can overlap elements occupying the same
+      - *How does the browser do this? It's called STACKING CONTEXT
+  - STACKING CONTEXT
+    - Forms layers
+    - Most famous CSS property to control this is z-index
+    - The higher the number appears on top
+    - Other properties that can create new stacking context
+      - Opacity other than 1
+      - Transform
+      - Filter
+
+## CSS Architecture, Components, and BEM
+- Mindset: Think -> Build -> Architect
+  - Think
+    - Component Driven Design (Atomic Design)
+      - Modular building blocks that make up interfaces
+      - Reusable across a project and other projects
+      - Independent: they shouldn't depend on their parent element
+  - Build
+    - Naming Coventions (OOCSS, Smacks?, BEM)
+      - BEM (Block Element Modifier)
+      - Easy to maintain and is reusable because we end up with classes with low specificity
+        - BLOCK
+          - .block {}
+          - standalone component that is meaningful on its own
+        - ELEMENT
+          - .block__element {}
+          - Part of a block that has no meaning on it's own
+        - MODIFIER
+          - .block__element-modifier {}
+          - a different version of a block or element
+  - Architect
+    - 7-1 pattern
+      - base
+      - components
+      - layout
+      - pages
+      - themes
+      - abstracts
+      - vendors
